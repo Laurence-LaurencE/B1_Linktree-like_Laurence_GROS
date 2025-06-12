@@ -1,0 +1,157 @@
+/*     *{} pour toute la page */
+
+
+* {
+    margin:0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./Picture/Vertmer.jpg");  /* pour insérer le lien du fichier saisir  ./   => selectionn' dossier d'emplacemt => selection' le fichier */
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* 
+    background-image: url("./Picture/Vertmer.jpg"); /* pour insérer le lien du fichier saisir  ./   => selectionn' dossier d'emplacemt => selection' le fichier */
+    /*background-size:cover;
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    /*margin: 0.5rem;             /*  0.5rem  _ par defaut 1em=16px  _ Dc 8px= 0.5rem */
+    /*gap:10px;
+    align-items: center;
+    justify-content: center;
+    /*text-align: justify;*/
+    */
+}
+
+.header_bann {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+
+    /*
+    width: 100%;
+        * height: 200px; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    margin: 0.5rem; 
+    padding: 0.5rem;
+    gap:10px;
+    align-items: center;
+    justify-content: center; 
+    */
+}
+
+.photo {
+
+}
+
+.header_title {
+    width:auto;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: wrap; /*retour à la lign auto du text*/
+    word-wrap:normal
+}
+
+
+h1, h2, h3,  {
+    width: 100%;
+    margin: 0 10%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: wrap; /*retour à la lign auto du text*/
+    word-wrap:normal
+}
+
+h1 {}
+h2 {}
+
+/*____________________________________________*/
+
+.intro {
+    margin: 0 10%;
+    /*padding: var(16px 20px 16px 20px);*/
+    
+    text-align: center;
+}
+
+h3 {
+    padding: 0.5rem;
+}
+
+.p_intro {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: aquamarine;
+    opacity: 0.5;
+    color: blue;
+    text-align: center;
+    color: black;
+    white-space: wrap; /*retour à la lign auto du text*/
+    
+}
+
+/*____________________________________________*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10%;
+}
+
+.card {
+    width: 200px;      /**/
+    height: flex;
+    display: flex;
+    margin: 10px;
+    overflow: auto;
+    border: solid, black;
+    border-radius: 20px;
+    background-color: black;
+    justify-content: center;
+    gap: 500px;
+    color: aquamarine;
+    text-align: center;
+    white-space: wrap; /*retour à la lign auto du text*/
+}
+
+h3 {}
+
+footer {
+
+}
+
+.sourcepicture {
+    font-size: small;
+    font-style: italic;
+    color:rgb(4, 65, 4);
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/*
+@media screen and (max-with:740px){
+    
+}
+
+@media screen and (min-with:740px){
+    
+}
+
+*/
