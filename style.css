@@ -4,6 +4,7 @@
 
 * {
     margin:0;
+    box-sizing: border-box;
 }
 
 
@@ -17,6 +18,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
+
     /* 
     background-image: url("./Picture/Vertmer.jpg"); /* pour insérer le lien du fichier saisir  ./   => selectionn' dossier d'emplacemt => selection' le fichier */
     /*background-size:cover;
@@ -30,10 +32,16 @@ body {
     justify-content: center;
     /*text-align: justify;*/
 }
-
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .header_bann {
     display: flex;
     flex-direction: column;
+    
     align-items:center;
     justify-content: center;
     margin: 10px;
@@ -81,9 +89,8 @@ body {
 h1, h2, h3 {
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    width: 100%;
-    margin: 0 10%;
+    margin: 10px; /* margin: 0 10%;  => margin: 0.5rem 0; */
+    width: auto; /* width: 100%; */
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -104,13 +111,13 @@ h2 {
     flex-direction: column;
     margin: 10px;
     width: 100%;
-    margin: 0 10%;
+    margin: 0 auto;    /*margin: 0 10%; */
     align-items: center;
     justify-content: center;
     text-align: center;
-    white-space: wrap;         /*retour à la lign auto du text*/
-    word-wrap:normal;
-    /*display: flex;
+    /*_white-space: wrap;         /*retour à la lign auto du text*/
+    word-wrap:normal; 
+    /* _______display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: center;
@@ -125,7 +132,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 10%;
     /*margin: 0 10%;*/
     /*padding: var(16px 20px 16px 20px);*/
     border-radius: 20px;
@@ -192,6 +199,25 @@ footer {
 
 /**/
 @media screen and (max-width:400px) {
+    .header_title {
+        color: rgb(220, 16, 206);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:10%;
+        white-space: wrap;         /*retour à la lign auto du text*/
+        word-wrap:normal;
+    }
+    h2 {display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:10%;
+        white-space: wrap;         /*retour à la lign auto du text*/
+        word-wrap:normal;
+
+    }
     .sourcepicture {
         color: rgb(226, 65, 21);
         display: flex;
@@ -199,6 +225,8 @@ footer {
         align-items: center;
         justify-content: center;
         gap:10%;
+        white-space: wrap;         /*retour à la lign auto du text*/
+        word-wrap:normal;
     }
 }
 
@@ -210,6 +238,8 @@ footer {
         align-items: center;
         justify-content: center;
         gap:10%;
+        white-space: wrap;         /*retour à la lign auto du text*/
+        word-wrap:normal;
     }
 }
 
