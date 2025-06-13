@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("./Picture/Vertmer.jpg");  /* pour insérer le lien du fichier saisir  ./   => selectionn' dossier d'emplacemt => selection' le fichier */
+    background-image: url("./picture/Vertmer.jpg");  /* pour insérer le lien du fichier saisir  ./   => selectionn' dossier d'emplacemt => selection' le fichier */
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
