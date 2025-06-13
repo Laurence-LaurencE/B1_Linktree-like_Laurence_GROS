@@ -159,6 +159,9 @@ h3 {
     gap:10%;
 }
 
+a {
+    text-decoration: none;
+}
 .card {
     width: 200px;      /**/
     height: flex;
