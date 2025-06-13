@@ -1,4 +1,5 @@
 /*     *{} pour toute la page */
+/*  CTRL + Espace => propose la list des selecter=urs existants   */
 
 
 * {
@@ -28,7 +29,6 @@ body {
     align-items: center;
     justify-content: center;
     /*text-align: justify;*/
-    */
 }
 
 .header_bann {
@@ -36,7 +36,9 @@ body {
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    width: 100%;
+    margin: 10px;
+    /*width: 100%;
+    margin-top: 0.8rem; */
 
     /*
     width: 100%;
@@ -53,7 +55,17 @@ body {
 }
 
 .photo {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
 
+.photo_profil {
+    width: 40%;         /* pour que la photo soit ronde : */
+    height: 40%;       /* width + height doivent être parfaitement identiques */
+    object-fit: cover;    /* pour q l’image remplisse entièrement son conteneur sans déformation */
+    border-radius:50%;     /* mettre valeur à 50% pour que les 4 angles s'arrondissent */
 }
 
 .header_title {
@@ -66,43 +78,75 @@ body {
     word-wrap:normal
 }
 
-
-h1, h2, h3,  {
+h1, h2, h3 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
     width: 100%;
     margin: 0 10%;
     align-items: center;
     justify-content: center;
     text-align: center;
-    white-space: wrap; /*retour à la lign auto du text*/
+    white-space: wrap;         /*retour à la lign auto du text*/
     word-wrap:normal
 }
 
-h1 {}
-h2 {}
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    white-space: wrap; 
+    /*text-align: center;*/
+}
+h2 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 100%;
+    margin: 0 10%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: wrap;         /*retour à la lign auto du text*/
+    word-wrap:normal;
+    /*display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    white-space: wrap;*/
+}
 
 /*____________________________________________*/
 
 .intro {
-    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    /*margin: 0 10%;*/
     /*padding: var(16px 20px 16px 20px);*/
-    
+    border-radius: 20px;
     text-align: center;
 }
 
 h3 {
-    padding: 0.5rem;
+    /*padding: 0.5rem;*/
+    align-items: center;
+    text-align: center;
 }
 
 .p_intro {
-    width: 100%;
+    width: 80%;
     padding: 0.7rem;
     background-color: aquamarine;
+    border-radius: 20px;
     opacity: 0.5;
-    color: blue;
     text-align: center;
     color: black;
-    white-space: wrap; /*retour à la lign auto du text*/
-    
+    white-space: wrap; /*retour à la lign auto du text*/ 
 }
 
 /*____________________________________________*/
@@ -131,8 +175,6 @@ h3 {
     white-space: wrap; /*retour à la lign auto du text*/
 }
 
-h3 {}
-
 footer {
 
 }
@@ -145,13 +187,31 @@ footer {
     padding: 10px;
 }
 
-/*
-@media screen and (max-with:740px){
-    
+/**/
+@media screen and (max-width:400px) {
+    .sourcepicture {
+        color: rgb(226, 65, 21);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:10%;
+
+
+    }
 }
 
-@media screen and (min-with:740px){
-    
+@media screen and (min-width:740px) {
+     .sourcepicture {
+        color: rgb(86, 21, 226);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:10%;
+
+
+    }
 }
 
-*/
+
